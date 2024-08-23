@@ -20,3 +20,12 @@ List of available commands.
 | `npm run build`   | Build static files.                   |
 | `npm run preview` | Preview the builded version.          |
 | `npm run lint`    | Check the OpenAPI spec.               |
+
+## Configuration
+
+List of available configuration options.
+
+| File                     | Documentation                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------ |
+| `redocly.yaml`           | [View](https://redocly.com/docs/redoc/config)                                  |
+| `postman-converter.json` | [View](https://github.com/postmanlabs/openapi-to-postman/blob/HEAD/OPTIONS.md) |
