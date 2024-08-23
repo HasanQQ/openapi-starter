@@ -14,7 +14,6 @@
         "@types/node": "^22.5.0",
         "cheerio": "^1.0.0",
         "http-server": "^14.1.1",
-        "npm": "^10.8.2",
         "openapi-to-postmanv2": "^4.24.0",
         "tsx": "^4.17.0",
         "typescript": "^5.5.4"
