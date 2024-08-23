@@ -1,6 +1,10 @@
 name: OpenAPI - Lint
 
-on: push
+on:
+  push:
+    paths:
+      - 'redocly.yaml'
+      - 'src/docs/**'
 
 jobs:
   lint:
