@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-content > div:first-child:not([role="search"]) {
+    padding: 20px;
+}
+
+.menu-content div[role="search"] > svg {
+    display: none;
+}
+
+.menu-content div[role="search"] > i {
+    font-size: 16px;
+    color: #888;
+    line-height: 38px;
+    margin-right: 7px;
+}
+
+.menu-content div[role="search"] > input {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 20px 10px 15px;
+    margin: 0 18px;
+}
+
+.menu-content div[data-role="search:results"]:not(:has(li)) {
+    padding: 20px;
+}
+
+.menu-content .operation-type {
+    height: 16px;
+    line-height: 16px;
+    font-size: 8px;
+    font-family: inherit !important;
+    border-radius: 3px;
+}
+
+.menu-content li[data-item-id] label > span:nth-child(2) {
+    text-wrap: nowrap;
+}
+
+.api-content code {
+    text-wrap: nowrap !important;
+}
+
+.api-content span.http-verb {
+    border-radius: 3px;
+}
+
+.api-content button:has(span.http-verb) {
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.api-content pre,
+.api-content .react-tabs__tab-panel {
+    border-radius: 5px !important;
+}
+
+.api-info ul.spec-dl-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 15px;
+    list-style-type: none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.api-info ul.spec-dl-buttons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 579px) {
+    .api-info ul.spec-dl-buttons {
+        flex-direction: row;
+    }
+
+    .api-info ul.spec-dl-buttons li a::after {
+        margin-left: 0;
+    }
+}
+
+.api-info ul.spec-dl-buttons li a {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    color: #333 !important;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.api-info ul.spec-dl-buttons li a:hover {
+    color: #333 !important;
+    background-color: #f3f3f3;
+}
+
+.api-info ul.spec-dl-buttons li a::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.api-info ul.spec-dl-buttons li a::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(icon-download.png);
+    background-size: 100%;
+    margin-left: auto;
+}
+
+.api-info ul.spec-dl-buttons li:nth-child(1) a::before {
+    background-image: url(logo-openapi.png);
+    background-size: 100%;
+}
+
+.api-info ul.spec-dl-buttons li:nth-child(2) a::before {
+    background-image: url(logo-postman.png);
+    background-size: 100%;
+}

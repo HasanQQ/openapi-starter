@@ -1,0 +1,22 @@
+# See https://redocly.com/docs/cli/configuration/ for more information.
+extends:
+  - "recommended"
+apis:
+  api:
+    root: "./src/docs/openapi.yaml"
+theme:
+  openapi:
+    htmlTemplate: "./public/index.html"
+    hideDownloadButton: true
+    expandResponses: "200"
+    theme:
+      logo:
+        #maxWidth: 150px
+        #maxHeight: 50px
+        gutter: 0px
+      typography:
+        fontFamily: "Roboto, sans-serif"
+        headings:
+          fontFamily: "Roboto, sans-serif"
+rules:
+  info-license: off

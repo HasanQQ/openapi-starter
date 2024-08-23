@@ -1,0 +1,25 @@
+{
+    "name": "shipsgo-api-docs",
+    "private": true,
+    "sideEffects": false,
+    "type": "module",
+    "scripts": {
+        "dev": "redocly preview-docs",
+        "build": "tsx ./src/scripts/build.ts",
+        "preview": "http-server ./dist -g",
+        "lint": "redocly lint"
+    },
+    "devDependencies": {
+        "@redocly/cli": "^1.21.0",
+        "@types/node": "^22.5.0",
+        "cheerio": "^1.0.0",
+        "http-server": "^14.1.1",
+        "npm": "^10.8.2",
+        "openapi-to-postmanv2": "^4.24.0",
+        "tsx": "^4.17.0",
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "@types/openapi-to-postmanv2": "^3.2.4"
+    }
+}
