@@ -63,8 +63,31 @@ const DIST_SPEC_POSTMAN = `${DIST_SPEC_DIR}/postman-collection.json`;
             return;
         }
 
+        // postman converter does not handle tag names
+        const displayNamesOfTags: { [key: string]: string } = {};
+
+        // collect display names from Open API spec
+        specOpenAPI.tags?.forEach((tag: { name: string; "x-displayName"?: string }) => {
+            if (tag["x-displayName"]) {
+                displayNamesOfTags[tag.name] = tag["x-displayName"];
+            }
+        });
+
+        //
+        const specPostmanCollection = result.output[0].data;
+
+        // check the top level items
+        specPostmanCollection.item?.map((item) => {
+            // if it is a tag override it
+            if (displayNamesOfTags[item.name!]) {
+                item.name = displayNamesOfTags[item.name!];
+            }
+
+            return item;
+        });
+
         // create postman-collection.json
-        fs.writeFileSync(DIST_SPEC_POSTMAN, JSON.stringify(result.output[0].data));
+        fs.writeFileSync(DIST_SPEC_POSTMAN, JSON.stringify(specPostmanCollection));
     });
 
     // update the meta["name="description"]
