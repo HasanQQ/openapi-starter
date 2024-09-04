@@ -109,6 +109,7 @@ const DIST_SPEC_POSTMAN = `${DIST_SPEC_DIR}/postman-collection.json`;
             $("<li/>").html(
                 $("<a/>") //
                     .attr("href", `specs/openapi.json?v=${vOpenAPISpec}`)
+                    .attr("download", "openapi.json")
                     .text("OpenAPI Spec")
             )
         )
@@ -116,6 +117,7 @@ const DIST_SPEC_POSTMAN = `${DIST_SPEC_DIR}/postman-collection.json`;
             $("<li/>").html(
                 $("<a/>") //
                     .attr("href", `specs/postman-collection.json?v=${vPostmanSpec}`)
+                    .attr("download", "postman-collection.json")
                     .text("Postman Collection")
             )
         )
