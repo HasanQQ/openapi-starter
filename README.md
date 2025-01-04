@@ -29,3 +29,9 @@ List of available configuration options.
 | ------------------------ | ------------------------------------------------------------------------------ |
 | `redocly.yaml`           | [View](https://redocly.com/docs/redoc/config)                                  |
 | `postman-converter.json` | [View](https://github.com/postmanlabs/openapi-to-postman/blob/HEAD/OPTIONS.md) |
+
+
+## Examples
+This is a list of API documentations that are uses this template.
+
+* https://api.shipsgo.com/docs/v2/
