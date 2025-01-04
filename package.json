@@ -1,5 +1,5 @@
 {
-    "name": "shipsgo-api-docs",
+    "name": "api-docs",
     "private": true,
     "sideEffects": false,
     "type": "module",
